@@ -6,10 +6,12 @@
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body ng-app="efi" ng-controller="masterCtrl">
         <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="container">
@@ -37,31 +39,33 @@
             <!-- Sidebar -->
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
-                    <li class="sidebar-brand">
-                        <a href="#">
-                            Start Bootstrap
-                        </a>
+                    <li>
+                        Choose a Category
                     </li>
                     <li>
-                        <a href="#">Dashboard</a>
+                        <label>
+                            <input type="radio" name="category" value="all" checked>All
+                        </label>
                     </li>
                     <li>
-                        <a href="#">Shortcuts</a>
+                        <label>
+                            <input type="radio" name="category" value="animals">Animals
+                        </label>
                     </li>
                     <li>
-                        <a href="#">Overview</a>
+                        <label>
+                            <input type="radio" name="category" value="birds">Birds
+                        </label>
                     </li>
                     <li>
-                        <a href="#">Events</a>
+                        <label>
+                            <input type="radio" name="category" value="places">Places
+                        </label>
                     </li>
                     <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Services</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <label>
+                            <input type="radio" name="category" value="herbs">Herbs
+                        </label>
                     </li>
                 </ul>
             </div>
@@ -71,11 +75,7 @@
             <div id="page-content-wrapper">
                 <div class="container-fluid">
                     <div class="posts">
-                        <div class="row post">
-                            <div class="col-lg-12">
-                                
-                            </div>
-                        </div>
+                        <efi-post ng-repeat="post in posts"></efi-post>
                     </div>
                 </div>
             </div>
