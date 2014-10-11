@@ -5,8 +5,10 @@
 <title>EFI | Home</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="../from_scratch/css/dropzone.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="../from_scratch/js/dropzone.js"></script>
 </head>
 <body>
 <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
@@ -32,9 +34,16 @@
     </div>
 </nav>
 <div class="container">
-    <div class="jumbotron">
-        
-    </div>
+    
+    <!-- Drop and drag functionality-->
+    <div>
+        <div id="dropzoneArea" class="dropzone">
+        </div>
+        <div id="searchButton">
+            <button id="search" type="button" class="btn btn-primary" style="width:20%" disabled>Search</button>
+        </div>
+    </div>    
 </div>
+    <script src="../from_scratch/js/upload.js"></script>
 </body>
 </html>                                     

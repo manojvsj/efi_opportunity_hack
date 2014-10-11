@@ -206,3 +206,8 @@ hr {
 .glyphicon-time {
     color: #BEBEBE;
 }
+#searchButton{
+    position: relative;
+    top: 65px;
+    text-align: center;
+}
