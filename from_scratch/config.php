@@ -1,0 +1,14 @@
+<?php
+     $lhost="Localhost";
+     $uname="root";
+     $pass="";
+     $dbname="efi";
+        try{
+          $db=new PDO("mysql:host=$lhost;dbname=$dbname",$uname,$pass);
+          //var_dump($db);
+          $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+        }
+        catch(PDOException $e) {
+         throw new RestException(406, 'Execution error occurred.-22');
+         
+    }
