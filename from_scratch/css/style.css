@@ -211,3 +211,9 @@ hr {
     top: 65px;
     text-align: center;
 }
+.loader{
+    left: 30%;
+    width: 40%;
+    height: 5%;
+    text-align: center;
+}

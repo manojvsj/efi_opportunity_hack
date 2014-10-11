@@ -26,7 +26,8 @@ var options = {
     });
 
     this.on("success", function(file, responseText) {
-      console.log(file, responseText);
+     $("#dropzoneArea").parent().find('div').hide();
+     $("#result").text("results");// console.log(file, responseText);
       var parsedData = $.parseJSON(responseText);
       if (0 == parsedData.error) {
     files[parsedData.orgName] = parsedData;
@@ -37,7 +38,7 @@ var options = {
     myDropzone.emit("error", file, fileExistError);
       }
 
-      
+
     });
 
     this.on("addedfile",function(){
@@ -45,7 +46,8 @@ var options = {
     });
     $("#search").click(function(){
        myDropzone.processQueue();
-       $("#dropzoneArea").find('.dz-message').text("loading..");
+       $(this).parent().html('<img class="loader" src="../from_scratch/images/loading1.gif"></img>');
+    
     });
 
     //this.on("removedfile", function(file) {

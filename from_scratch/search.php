@@ -42,7 +42,9 @@
         <div id="searchButton">
             <button id="search" type="button" class="btn btn-primary" style="width:20%" disabled>Search</button>
         </div>
-    </div>    
+    </div>  
+    <div id="results">
+    </div>  
 </div>
     <script src="../from_scratch/js/upload.js"></script>
 </body>
