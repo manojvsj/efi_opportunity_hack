@@ -16,11 +16,11 @@ function searchImg() {
 
     // print_r($commandData);
 
-    $stmt = $db->query("SELECT *, FROM_UNIXTIME(created, '%Y-%m-%dT%k:%i:%sZ') as created FROM `user_uploads` WHERE img in ('uploads/efi_44_1413052531.jpg', 'uploads/efi_45_1413052554.jpg')");
+    // $stmt = $db->query("SELECT * FROM `user_uploads` WHERE img in ('uploads/efi_44_1413052531.jpg', 'uploads/efi_45_1413052554.jpg')");
 
-    while ($res = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        print_r($res['created']);
-    }
+    // while ($res = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    //     print_r($res['created']);
+    // }
 }
 
 ?>
