@@ -1,8 +1,9 @@
 <?php
 
-include ('config.php');
+include_once('config.php');
+
 function next_count(){
-    include ('config.php');
+      global $db;
       $data = $db->query("SELECT AUTO_INCREMENT
       FROM information_schema.TABLES
       WHERE TABLE_SCHEMA = 'efi'

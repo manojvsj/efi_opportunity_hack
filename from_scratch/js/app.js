@@ -10,7 +10,7 @@ efi.controller('masterCtrl', ['$scope', function($scope) {
             likes: 15,
             comments: 5,
             shares: 51,
-            created: "47 minutes ago"
+            created: 1413068813
         }
 
     ];
@@ -21,5 +21,11 @@ efi.directive('efiPost', function() {
     return {
         templateUrl: 'js/templates/post.html',
         restrict: 'E'
+    };
+});
+
+efi.filter('fromNow', function(){
+    return function(ts) {
+        return moment.unix(ts).fromNow();
     };
 });

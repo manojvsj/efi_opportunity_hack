@@ -182,7 +182,7 @@ hr {
 }
 
 .social-cluster-list .post-meta {
-    width: 135px;
+    width: 200px;
 }
 
 .social-cluster-list li p {
@@ -210,4 +210,13 @@ hr {
     position: relative;
     top: 65px;
     text-align: center;
+}
+.add-form {
+    width: 33%;
+    margin: auto;
+}
+
+.main_wrapper {
+    top: 140px;
+    position: relative;
 }
