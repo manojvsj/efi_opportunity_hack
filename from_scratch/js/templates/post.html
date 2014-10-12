@@ -18,12 +18,12 @@
                 </li>
                 <li class="post-meta">
                     <span class="glyphicon glyphicon-time"></span>
-                    <p>{{post.created}}</p>
+                    <p>{{post.created | fromNow }}</p>
                 </li>
             </ul>
         </div>
     <div class="post-img">
-        <img style="height:150px;width:150px;"src="imgs/{{post.imgPath}}">
+        <img style="height:150px;width:150px;"src="imgs/screen.png">
     </div>
     <div class="post-right-column">
         <div class="post-content">

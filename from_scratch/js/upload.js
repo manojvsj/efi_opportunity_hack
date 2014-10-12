@@ -1,6 +1,6 @@
 Dropzone.autoDiscover = false;
 var options = {
-  url: 'searchContent.php?type=search',
+  url: 'upload.php',
   paramName: "file",
   clickable: true,
   acceptedFiles: 'image/*',

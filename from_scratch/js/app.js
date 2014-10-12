@@ -34,3 +34,9 @@ efi.directive('efiPost', function() {
         restrict: 'E'
     };
 });
+
+efi.filter('fromNow', function(){
+    return function(ts) {
+        return moment.unix(ts).fromNow();
+    };
+});
