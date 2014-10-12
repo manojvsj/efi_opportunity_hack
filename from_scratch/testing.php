@@ -1,17 +1,21 @@
 <?php
 
-require_once "commonutilities.php";
+//require_once "commonutilities.php";
 
-searchImg();
+searchImg('C8.jpg');
 
-function searchImg() {
+function searchImg($inputFile) {
     global $db;
 
-    $cmd = "hack.exe " . 'uploads/'.$inputFile;
+    $inputFile = 'uploads/'.$inputFile;
+    
+    $cmd = 'octave -qf --persist --path script_path --eval ("hack5("'.$inputFile.'")")';
 
+
+    print $cmd;
     // $returnData = array();
 
-    // $commandData = array();
+    $commandData = array();
     exec($cmd, $commandData);
 
     print_r($commandData);
