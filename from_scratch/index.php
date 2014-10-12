@@ -74,7 +74,7 @@
             <!-- Page Content -->
             <div id="page-content-wrapper">
                 <div class="container-fluid">
-                    <div class="posts">
+                    <div class="post">
                         <efi-post ng-repeat="post in posts"></efi-post>
                     </div>
                 </div>
