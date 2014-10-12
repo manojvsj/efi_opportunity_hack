@@ -3,7 +3,6 @@
      $uname="root";
      $pass="";
      $dbname="efi";
-     $db;
         try{
           $db=new PDO("mysql:host=$lhost;dbname=$dbname",$uname,$pass);
           //var_dump($db);

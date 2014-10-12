@@ -11,6 +11,7 @@
         <script type="text/javascript" src="js/app.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
     </head>
     <body ng-app="efi" ng-controller="masterCtrl">
         <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
@@ -75,7 +76,7 @@
             <!-- Page Content -->
             <div id="page-content-wrapper">
                 <div class="container-fluid">
-                    <div class="posts">
+                    <div class="post">
                         <efi-post ng-repeat="post in posts"></efi-post>
                     </div>
                 </div>

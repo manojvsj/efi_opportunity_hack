@@ -6,11 +6,15 @@
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="../from_scratch/css/dropzone.css">
+<script src="../from_scratch/js/dropzone.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="../from_scratch/js/dropzone.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
 </head>
-<body>
+<body ng-app="efi" ng-controller="masterCtrl">
 <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="container">
@@ -44,7 +48,14 @@
         </div>
     </div>  
     <div id="results">
-    </div>  
+    </div> 
+    <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="post">
+                        <efi-post ng-repeat="post in posts"></efi-post>
+                    </div>
+                </div>
+    </div> 
 </div>
     <script src="../from_scratch/js/upload.js"></script>
 </body>

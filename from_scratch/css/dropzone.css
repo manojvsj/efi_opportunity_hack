@@ -12,6 +12,7 @@
   border: 1px solid rgba(0,0,0,0.08);
   background: rgba(0,0,0,0.02);
   padding: 1em;
+
 }
 .dropzone.dz-clickable {
   cursor: pointer;
@@ -161,6 +162,7 @@
   background: rgba(0,0,0,0.03);
   padding: 23px;
   top:60px;
+  text-align: center;
 }
 .dropzone .dz-default.dz-message {
   opacity: 1;

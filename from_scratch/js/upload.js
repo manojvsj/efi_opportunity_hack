@@ -1,6 +1,6 @@
 Dropzone.autoDiscover = false;
 var options = {
-  url: 'searchContent.php?type=search',
+  url: 'upload.php',
   paramName: "file",
   clickable: true,
   acceptedFiles: 'image/*',
@@ -27,7 +27,7 @@ var options = {
 
     this.on("success", function(file, responseText) {
      $("#dropzoneArea").parent().find('div').hide();
-     $("#result").text("results");// console.log(file, responseText);
+     $("#result").html("results are");// console.log(file, responseText);
       var parsedData = $.parseJSON(responseText);
       if (0 == parsedData.error) {
     files[parsedData.orgName] = parsedData;
